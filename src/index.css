@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  font-family: "Poppins", sans-serif;
+  ;
+}
+.bgimage {
+	position: relative;
+	z-index: 1;
+}
+
+.bgimage::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('https://img.poki.com/cdn-cgi/image/quality=78,width=1920,height=1080,fit=cover,f=auto/7260338f6209ca16aba5152f01c0c0f6.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	filter: brightness(0.5);
+	z-index: -1;
+}
